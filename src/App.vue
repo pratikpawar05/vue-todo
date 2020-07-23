@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
 }
 body {
   background: #222831;
@@ -28,4 +28,5 @@ body {
 .card-body a {
   color: #efbb35;
 }
+
 </style>

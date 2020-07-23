@@ -1,6 +1,5 @@
 <template>
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#"></a>
     <button
       class="navbar-toggler"
       type="button"
@@ -12,13 +11,16 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+    <i class="fa fa-tasks" aria-hidden="true"></i>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      Todo-List
+      <ul class="navbar-nav ml-auto ">
+        
         <li class="nav-item active ml-3">
         <router-link to="/">Home</router-link> 
         </li>
         <li class="nav-item ml-3">
-             <router-link to="/about">About</router-link>
+             <router-link to="/completedlist">Completed Tasks</router-link>
         </li>
       </ul>
     </div>
@@ -38,5 +40,8 @@ export default {
   color: #fff;
   padding: 0 15px;
   display: block;
+}
+ul li{
+  margin-right: 20px;
 }
 </style>
