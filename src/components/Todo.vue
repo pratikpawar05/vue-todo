@@ -3,6 +3,7 @@
     <div class=".col-md-6 col-lg-6 container">
       <input class="form-control" type="text" v-model="task" @keyup.enter="addTask" placeholder="Please enter the task?" required/>
       <button @click="addTask" class="btn btn-primary ">Add-Task</button>
+
     </div>
     <br>
     <div class=".col-md-4 col-lg-4 container mt-3">
@@ -10,7 +11,7 @@
         <li class="list-group-item" v-for="(temp,index) in list" v-bind:key="index">
           {{temp}}
           <button  class="btn btn-danger myBtn" @click="remove(index)">Delete</button>
-          <button  class="btn btn-secondary myBtn"  @click="edit(index)">Edit</button>
+          <button  class="btn btn-secondary myBtn"  @click="edit(index)" >Edit</button>
           <button class="btn btn-success myBtn" @click="done(index)">Done</button>
         </li>
       </ul>

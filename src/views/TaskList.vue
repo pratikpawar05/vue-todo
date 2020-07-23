@@ -1,6 +1,6 @@
 <template>
   <div class="completed-tasks">
-      <Todo @inputData="addToList"></Todo>
+      <h2>Completed Task List:</h2>
         <div class=".col-md-4 col-lg-4 container mt-3">
       <ul class="list-group">
         <li class="list-group-item" v-for="(temp,index) in completed" v-bind:key="index">
@@ -16,6 +16,7 @@
 <script>
 export default {
     name: "TaskList",
+ 
     data(){
         return{
             completed:[]
