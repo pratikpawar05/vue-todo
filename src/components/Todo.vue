@@ -44,6 +44,9 @@
 <script>
 export default {
   name: "Todo",
+  created(){
+    
+  },
   data() {
     return {
       task: "",
@@ -53,7 +56,7 @@ export default {
   methods: {
     addTask: function () {
       if(this.task){
-      this.list.push(this.task);
+      this.list.unshift(this.task);
       //   console.log('You Just Added A New Task!');
       this.task = "";
       }

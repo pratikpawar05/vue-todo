@@ -31,5 +31,7 @@ export default {
 }
 </script>
 <style scoped>
-
+li{
+    margin:3px ;
+}
 </style>
